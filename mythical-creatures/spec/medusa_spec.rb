@@ -1,5 +1,6 @@
 require 'rspec'
-require './lib/medusa'
+require '../lib/medusa'
+require "pry"
 
 RSpec.describe Medusa do
   it 'has a name' do
@@ -25,7 +26,6 @@ RSpec.describe Medusa do
   it 'turns a person to stone when staring at them' do
     medusa = Medusa.new('Cassiopeia')
     victim = Person.new('Perseus')
-
     expect(victim.stoned?).to be false
     medusa.stare(victim)
     expect(victim.stoned?).to be true
