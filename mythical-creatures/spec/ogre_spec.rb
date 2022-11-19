@@ -78,13 +78,12 @@ RSpec.describe Ogre do
     human = Human.new
 
     6.times { ogre.encounter(human) }
-    binding.pry
     expect(ogre.encounter_counter).to eq(6)
     expect(ogre.swings).to eq(2)
     expect(human.knocked_out?).to be true
   end
 
-  xit 'apologizes and the human wakes up' do
+  it 'apologizes and the human wakes up' do
     ogre = Ogre.new('Brak')
     human = Human.new
 
