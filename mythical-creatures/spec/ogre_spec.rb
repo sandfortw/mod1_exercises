@@ -73,7 +73,7 @@ RSpec.describe Ogre do
     expect(human.notices_ogre?).to be true
   end
 
-  it 'hits the human every second time it swings' do
+  xit 'hits the human every second time it swings' do
     ogre = Ogre.new('Brak')
     human = Human.new
 
@@ -83,7 +83,7 @@ RSpec.describe Ogre do
     expect(human.knocked_out?).to be true
   end
 
-  it 'apologizes and the human wakes up' do
+  xit 'apologizes and the human wakes up' do
     ogre = Ogre.new('Brak')
     human = Human.new
 

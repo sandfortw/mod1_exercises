@@ -47,9 +47,9 @@ class Human
 
   def encounter_ogre 
     @encounter_counter += 1 
-    if @encounter_counter == 6
-      @knocked_out = true
-    end
+    # if @encounter_counter == 6
+    #   @knocked_out = true
+    # end
   end
 
   def knocked_out?
