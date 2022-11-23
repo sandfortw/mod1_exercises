@@ -14,7 +14,7 @@ RSpec.describe 'sort_by pattern' do
     expect(sorted).to eq(["Bacon", "broccoli", "candy", "Carrots", "FISH"])
   end
 
-  xit 'alphabetically by last letter' do
+  it 'alphabetically by last letter' do
     things = ["pill", "box", "glass", "water", "sponge"]
     transformed = []
     things.each do |thing|

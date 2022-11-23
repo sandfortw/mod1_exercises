@@ -1,29 +1,28 @@
-require 'pry'
 class Bag
-  attr_accessor :empty, :count, :candies
 
-  def initialize(count = 0)
+  attr_accessor :count, :candies
+
+  def initialize 
     @empty = true
-    @count = count
+    @count = 0
     @candies = []
   end
 
-  def empty?
-    @candies == [] ? @empty = true : @empty = false 
-  end
-
-  def <<(candy)
-    @candies << candy
+  def <<(input)
+    @candies << input
+    @empty = false
     @count += 1 
   end
 
-  def contains?(type)
-    @candies.any? do |candy|
-      candy.type == type
+  def empty?
+    @empty
   end
 
+  def contains?(input)
+    @candies.any? do |candy|
+      candy.type == input
+    end
+  end
   
-end
 
-  
 end
