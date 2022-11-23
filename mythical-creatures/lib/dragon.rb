@@ -1,5 +1,5 @@
 class Dragon
-attr_accessor :name, :color, :rider
+attr_reader :name, :color, :rider
 
   def initialize(name = "Ramoth", color = :gold, rider = "Lessa")
     @name = name
@@ -9,7 +9,7 @@ attr_accessor :name, :color, :rider
   end
 
   def hungry?
-    @hungry < 3 ? true : false
+    @hungry < 3 
   end
 
   def eat

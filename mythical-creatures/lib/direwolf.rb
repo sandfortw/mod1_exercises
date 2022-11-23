@@ -1,12 +1,12 @@
 class Direwolf
   attr_accessor :name, :home, :size, :starks_to_protect, :safety_status
 
-  def initialize(name, home = "Beyond the Wall", size = "Massive", starks_to_protect = [], safety_status = false)
+  def initialize(name, home = "Beyond the Wall", size = "Massive")
     @name = name
     @home = home
     @size = size
-    @starks_to_protect = starks_to_protect
-    @safety_status = safety_status
+    @starks_to_protect = []
+    @safety_status = false
   end
 
   def protects(stark)
@@ -19,7 +19,7 @@ class Direwolf
   end
 
   def safe?
-    @safety_status == false ? false : true
+    @safety_status
   end
 
   def hunts_white_walkers?
@@ -49,7 +49,7 @@ class Stark
   end
 
   def safe?
-    @safety_status == false ? false : true
+    @safety_status
   end
 
   def house_words 

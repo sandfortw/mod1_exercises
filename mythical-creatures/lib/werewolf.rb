@@ -9,15 +9,15 @@ attr_accessor :name, :location, :human, :hungry
   end
 
   def human? 
-    @human == true ? true : false
+    @human
   end
 
   def wolf?
-    @human == true ? false : true 
+    !@human
   end
 
   def hungry?
-    @hungry == false ? false : true
+    @hungry
   end
 
   def change!

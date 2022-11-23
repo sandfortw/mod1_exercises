@@ -28,15 +28,15 @@ attr_accessor :name, :breed
   end
 
   def cranky?
-    @cranky < 3 ? false : true 
+    @cranky >= 3 
   end
 
   def standing?
-    @standing == false ? false : true 
+    @standing
   end
 
   def laying? 
-    @laying == true ? true :false
+    @laying
   end
 
   def sleep

@@ -1,59 +1,46 @@
 class Ogre
-attr_accessor :name, :location, :swings, :encounter_counter
+attr_reader :name, :home, :swings, :encounter_counter
 
-  def initialize(name, location = 'Swamp', notices_ogre = false, swings = 0, encounter_counter = 0)
+  def initialize(name, home = 'Swamp')
     @name = name
-    @location = location
-    @swings = swings 
-    @notices_ogre = notices_ogre
-    @encounter_counter = encounter_counter
-    
+    @home = home
+    @swings = 0 
+    @notices_ogre = false
+    @encounter_counter = 0 
   end
-
-  def home
-    @location
-  end
-
 
   def encounter(human)
     human.encounter_ogre
     @encounter_counter += 1
-    if @encounter_counter % 3 == 0
-      @swings +=1
-    end
+    @encounter_counter % 3 == 0 ? @swings +=1 : nil
   end
 
   def swing_at(human)
     @swings += 1
   end
 
-def apologize(human)
-  human.wakes
-end
-
-
-
+  def apologize(human)
+    human.wakes
+  end
 
 end
 
 class Human
-  attr_accessor :name, :encounter_counter, :knocked_out
+  attr_reader :name, :encounter_counter
 
-  def initialize(name = 'Jane',  encounter_counter = 0, knocked_out = false)
+  def initialize(name = 'Jane')
     @name = name
-    @encounter_counter = encounter_counter
-    @knocked_out = knocked_out
+    @encounter_counter = 0
+    @knocked_out = false
   end
 
   def encounter_ogre 
     @encounter_counter += 1 
-    # if @encounter_counter == 6
-    #   @knocked_out = true
-    # end
+    @encounter_counter == 6 ? @knocked_out = true : nil
   end
 
   def knocked_out?
-    @knocked_out == true ? true : false
+    @knocked_out
   end
 
   def notices_ogre?

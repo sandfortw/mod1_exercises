@@ -8,7 +8,7 @@ attr_accessor :name, :pet
   end
 
   def thirsty
-    @thirst == true ? true : false
+    @thirst
   end
 
   def drink 

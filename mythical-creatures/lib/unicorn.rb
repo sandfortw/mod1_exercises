@@ -9,7 +9,7 @@ class Unicorn
   end
 
   def silver?
-  @color == 'silver' ? true : false 
+  @color == 'silver' 
   end
 
   def say(saying)

@@ -12,7 +12,7 @@ class Pirate
   end
 
   def cursed?
-    @cursed < 3 ? false : true 
+    @cursed >= 3 
   end
 
   def commit_heinous_act

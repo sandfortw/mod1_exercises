@@ -13,7 +13,7 @@ attr_accessor :name
   end
 
   def statues
-    return @statues
+    @statues
   end
 end
 
@@ -29,10 +29,10 @@ class Person
   end
 
   def name
-    return @name
+    @name
   end
 
   def stoned?
-    @stoned == true ? true : false 
+    @stoned
   end
 end

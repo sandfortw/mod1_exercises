@@ -1,14 +1,14 @@
 class Wizard
   attr_accessor :name, :bearded 
 
-  def initialize(name, bearded = true)
+  def initialize(name, bearded: true)
     @name = name
     @bearded = bearded
     @rested = 0
   end
 
   def bearded?
-    @bearded == true ? true : false
+    bearded
   end
 
   def incantation(spell)
@@ -16,7 +16,7 @@ class Wizard
   end
 
   def rested?
-    @rested < 3 ? true : false
+    @rested < 3
   end
 
   def cast
