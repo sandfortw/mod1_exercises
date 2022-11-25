@@ -19,12 +19,9 @@ attr_accessor :name, :breed
   end
 
   def run
-    if @laying == false
-      @cranky += 1 
-      return 'Clop clop clop clop!'
-    else
-      return 'NO!'
-    end
+    return 'NO!' unless @laying == false
+      @cranky += 1  
+      'Clop clop clop clop!'
   end
 
   def cranky?
@@ -40,12 +37,9 @@ attr_accessor :name, :breed
   end
 
   def sleep
-    if @standing == true
-      return 'NO!'
-    else
+    return 'NO!' unless @standing == false
       @cranky = 0
-      return 'zzz'
-    end
+       'zzz'
   end
 
   def drink_potion

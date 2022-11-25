@@ -34,11 +34,6 @@ class Direwolf
 end
 
 
-
-
-
-
-
 class Stark
   attr_accessor :name, :location, :safety_status
 

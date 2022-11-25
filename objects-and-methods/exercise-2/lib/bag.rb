@@ -1,22 +1,22 @@
 require 'pry'
 
 class Bag
-attr_accessor :empty, :count, :candies
+attr_reader :candies
   def initialize
-    @empty = true
-    @count = 0
-    @candies = []
-    
+    @candies = [] 
+  end
+
+  def count
+    @candies.count 
   end
 
   def empty?
-    @count == 0 ? @empty = true : @empty = false
-    @empty
+    @candies.empty? 
   end
 
   def <<(candy)
     @candies << candy
-    @count +=1
+  
   end
 
   def contains?(type)
@@ -27,25 +27,33 @@ attr_accessor :empty, :count, :candies
 
 
   def grab(type)
-    if contains?(type) == true
-      @candies.delete(type)
-      @count -= 1
-      Candy.new(type)
-    else
-      nil
-      print "nil"
+    candy = candies.find do |candy|
+      candy.type == type
     end
+    candies.delete(candy)
   end
  
   def take(number)
-    @count -= number
-    if number == 1
-      @candies.each do |candy|
-        return candy
-      end
-    else
-      return number
+    taken = []
+
+    number.times do 
+      taken << candies.shift
     end
+
+    if number == 1
+    taken.first
+    else
+    taken
+    end
+
+    # @count -= number
+    # if number == 1
+    #   @candies.each do |candy|
+    #     return candy
+    #   end
+    # else
+    #   return number
+    # end
   end
   
 end

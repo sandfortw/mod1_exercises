@@ -16,11 +16,11 @@ These exercises focus on these two types of operations.
 
 ## Exercises
 
-- `leather_chair_spec.rb`
+<!-- - `leather_chair_spec.rb`
 - `tire_spec.rb`
 - `pills_spec.rb`
 - `floor_spec.rb`
-- `milk_bottle_spec.rb`
+- `milk_bottle_spec.rb` -->
 - `person_spec.rb`
 - `door_spec.rb`
 - `teeth_spec.rb`

@@ -29,7 +29,7 @@ RSpec.describe Bag do
   it 'is not empty when it has candies' do
     bag = Bag.new
     bag << Candy.new('Nerds')
-
+    # binding.pry
     expect(bag.empty?).to be false
   end
 
@@ -92,8 +92,7 @@ RSpec.describe Bag do
     expect(bag.count).to eq(3)
 
     taken = bag.take(2)
-  
-    expect(taken).to eq(2)
+    expect(taken.size).to eq(2)
     expect(bag.count).to eq(1)
   end
 
