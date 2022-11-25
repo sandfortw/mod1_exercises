@@ -1,6 +1,6 @@
 Suggested Order of Completion
 
-* `hello_spec.rb`
+<!-- * `hello_spec.rb` -->
 * `character_count_spec.rb`
 * `escape_characters_spec.rb`
 * `mad_lib_spec.rb`
