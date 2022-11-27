@@ -1,3 +1,4 @@
+require 'pry'
 require 'rspec'
 require_relative 'appointments'
 
@@ -11,7 +12,6 @@ RSpec.describe Appointments do
   it 'has an earliest one' do
     slots = Appointments.new
     t1 = Time.new(2014, 3, 14, 4, 30)
-
     slots.at(t1)
 
     expect(slots.earliest).to eq(t1)

@@ -1,3 +1,4 @@
+require 'pry'
 require 'rspec'
 require_relative 'cupcake'
 require_relative 'cupcakes'
@@ -20,7 +21,7 @@ RSpec.describe Cupcakes do
     cupcakes << Cupcake.new('Carrot', 5)
     cupcakes << Cupcake.new('Caramel', 12)
     cupcakes << Cupcake.new('Chocolate', 8)
-
+  
     expect(cupcakes.sweetest.flavor).to eq('Carrot')
   end
 end

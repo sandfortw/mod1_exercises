@@ -21,29 +21,29 @@ These exercises focus on these two types of operations.
 - `pills_spec.rb`
 - `floor_spec.rb`
 - `milk_bottle_spec.rb` -->
-- `person_spec.rb`
-- `door_spec.rb`
-- `teeth_spec.rb`
-- `music_spec.rb`
-- `drops_spec.rb`
-- `light_spec.rb`
-- `baby_spec.rb`
-- `kid_spec.rb`
-- `beers_spec.rb`
-- `teenager_spec.rb`
-- `adult_spec.rb`
-- `roll_call_spec.rb`
-- `santa_spec.rb`
-- `dog_spec.rb`
-- `children_spec.rb`
-- `water_spec.rb`
-- `clock_spec.rb`
-- `appointments_spec.rb`
-- `yak_spec.rb`
-- `money_spec.rb`
-- `cupcake_spec.rb`
-- `student_spec.rb`
-- `catalogue_spec.rb`
+<!-- - `person_spec.rb` -->
+<!-- - `door_spec.rb` -->
+<!-- - `teeth_spec.rb` -->
+<!-- - `music_spec.rb` -->
+<!-- - `drops_spec.rb` -->
+<!-- - `light_spec.rb` -->
+<!-- - `baby_spec.rb` -->
+<!-- - `kid_spec.rb` -->
+<!-- - `beers_spec.rb` -->
+<!-- - `teenager_spec.rb` DOES NOT EXIST -->
+<!-- - `adult_spec.rb` -->
+<!-- - `roll_call_spec.rb` -->
+<!-- - `santa_spec.rb` -->
+<!-- - `dog_spec.rb` -->
+<!-- - `children_spec.rb` -->
+<!-- - `water_spec.rb` -->
+<!-- - `clock_spec.rb` -->
+<!-- - `appointments_spec.rb` -->
+<!-- - `yak_spec.rb` -->
+<!-- - `money_spec.rb` -->
+<!-- - `cupcake_spec.rb` -->
+<!-- - `student_spec.rb` -->
+<!-- - `catalogue_spec.rb` -->
 - `wallet_spec.rb`
 - `clearance_spec.rb`
 
