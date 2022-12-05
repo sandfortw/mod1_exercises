@@ -38,7 +38,7 @@ RSpec.describe 'Any test' do
     phrases = ["Sure!", "OK.", "I have no idea.", "Really?Whatever."]
     # Your code goes here
     multi_word_phrase = phrases.any? do |variable|
-      variable.include?" "
+      variable.include?(" ") or variable.chop.match(/[.?!]/)
     end
     expect(multi_word_phrase).to eq(true)
   end
